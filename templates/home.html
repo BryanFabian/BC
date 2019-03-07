@@ -1,0 +1,27 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+<DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" >
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4 " style="color: white;font-weight: bold">Bienvenidos a BlayCash</h1>
+        <p class="lead">Ahora disponer de tu dinero es mas rapido y hazlo como si lo tuvieras en tu bolsillo.</p>
+        <hr class="my-4">
+        <p style="font-weight: bold;">Buscamos la libertad fiancera y del uso libre del dinero sin terceros que usen tus recursos.</p>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('comprar') }}" role="button" style="background-color: #ff5f00;border-color:red;">Empezar</a>
+    </div>
+    
+</body>
+</html>
+
+{% endblock %}
